@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from "react-player";
+import videoRoll from '../assets/rickroll.mp4'
 export default class Rickroll extends React.Component{
     render(){
         return(
@@ -8,7 +9,7 @@ export default class Rickroll extends React.Component{
         <center>
                
                <ReactPlayer
-  url='https://shattereddisk.github.io/rickroll/rickroll.mp4'
+  url={videoRoll}
   playing={true}
   loop = {true}
   width = {400}
